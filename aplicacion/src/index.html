@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Red Social</title>
+    <link rel="stylesheet" href="./recursos/estilos/estilos.css">
+</head>
+
+<body>
+    <header class="encabezado-principal">
+        <a href="index.html">
+            <img src="/aplicacion/recursos/imagenes/logo.svg" alt="">
+        </a>
+        <nav class="vinculos"> 
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="buscar.html">Buscar</a></li> 
+                <li><a href="editar.html">Editar</a></li> 
+                <li><a href="registrarusuario.html">Registrar Usuario</a></li>
+                <li><a href="chat.html">Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <section class="perfil">
+            <h1 class="nombre-perfil">[Nombre Apellido]</h1>
+            <p class="info-perfil">@[nombre_usuario]</p>
+            <a href="cerrar_sesion.html" class="logout-button">Cerrar sesión</a>
+        </section>
+
+        <section class="seguidores-seguidos">
+            <article class="seguidores">
+                <a href="seguidores.html">[0]</a>
+                <p>Seguidores</p>
+            </article>
+            <article class="seguidos">
+                <a href="seguidos.html">[0]</a>
+                <p>Seguidos</p>
+            </article>
+        </section>
+
+        <section class="publicaciones">
+            <h2>Publicaciones</h2>
+            <p><a href="publicaciones.html" class="agregar-publicacion">+</a> Agregar pictexius</p>
+
+            <article class="publicar">
+                <p class="nombreusuario">[nombre_usuario]</p>
+                <p>Contenido de la publicación de ejemplo...</p>
+                <time class="fecha" datetime="2026-06-06">2026-06-06 12:00:00</time>
+                <div class="botones">
+                    <a href="eliminar.html">Eliminar</a>
+                    <a href="editar.html">Editar</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="pie-principal">
+        <p>&copy; Red Social. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Red Social</title>
+    <link rel="stylesheet" href="./recursos/estilos/estilos.css">
+</head>
+
+<body>
+    <header class="encabezado-principal">
+        <a href="index.html">
+            <img src="/aplicacion/recursos/imagenes/logo.svg" alt="">
+        </a>
+        <nav class="vinculos"> 
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="buscar.html">Buscar</a></li> 
+                <li><a href="editar.html">Editar</a></li> 
+                <li><a href="registrarusuario.html">Registrar Usuario</a></li>
+                <li><a href="chat.html">Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <div class="contenedor-chat">
+            
+            <section class="encabezado-chat">
+                <h2>Chat con [Nombre Apellido]</h2>
+            </section>
+
+            <section class="mensajes-chat" id="mensajesChat">
+                <!-- Mensaje recibido -->
+                <article class="mensaje mensaje-otro">
+                    <strong>[Nombre Remitente]:</strong>
+                    <p>Hola, ¿cómo estás?</p>
+                    <time class="fecha" datetime="2026-06-06">2026-06-06 12:00:00</time>
+                </article>
+
+                <!-- Mensaje enviado -->
+                <article class="mensaje mensaje-mio">
+                    <strong>[Tu Nombre]:</strong>
+                    <p>¡Hola! Todo bien por aquí.</p>
+                    <time class="fecha" datetime="2026-06-06">2026-06-06 12:01:00</time>
+                </article>
+            </section>
+
+            <section class="seccion-entrada-chat">
+                <form action="#" method="post" enctype="multipart/form-data" class="formulario-chat">
+                    <button type="button" class="boton-adjuntar">📎</button>
+                    <input type="file" name="imagen" id="imagen" style="display: none;" accept="image/*">
+                    <textarea name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="pie-principal">
+        <p>&copy; Red Social. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ==========================================
+   Encabezado Principal
+   ========================================== */
+.encabezado-principal {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado-principal img {
+    height: 40px; /* Ajusta según el tamaño de tu logo */
+    display: block;
+}
+
+.vinculos ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.vinculos a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: opacity 0.3s;
+}
+
+.vinculos a:hover {
+    opacity: 0.8;
+}
+
+/* ==========================================
+   Contenido Principal
+   ========================================== */
+.contenido-principal {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Sección de Perfil */
+.perfil {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.nombre-perfil {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.info-perfil {
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.logout-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #c0392b;
+}
+
+/* Sección Seguidores / Seguidos */
+.seguidores-seguidos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.seguidores, .seguidos {
+    text-align: center;
+}
+
+.seguidores a, .seguidos a {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #3498db;
+}
+
+.seguidores p, .seguidos p {
+    margin: 5px 0 0 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Sección Publicaciones */
+.publicaciones {
+    margin-top: 30px;
+}
+
+.agregar-publicacion {
+    font-size: 24px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.publicar {
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+}
+
+.publicar .nombreusuario {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.publicar .fecha {
+    font-size: 12px;
+    color: #7f8c8d;
+    display: block;
+    margin-top: 5px;
+}
+
+.botones {
+    margin-top: 10px;
+}
+
+.botones a {
+    margin-right: 10px;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.botones a:hover {
+    background-color: #2980b9;
+}
+
+.contenido-principal .registrar-usuario {
+    padding: 20px 20%;
+}
+
+.contenido-principal .registrar-usuario form{
+    display: flex;
+    flex-direction: column; 
+    gap: 5px; 
+}
+
+.contenido-principal .registrar-usuario button{
+    height: 30px;
+    width: 100%;
+}
+
+.contenedor-chat {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.encabezado-chat {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.encabezado-chat h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mensajes-chat {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.mensaje {
+    max-width: 70%;
+    margin: 5px;
+    padding: 8px 12px;
+    border-radius: 15px;
+    word-wrap: break-word;
+}
+
+.mensaje p {
+    margin: 4px 0;
+}
+
+.mensaje-mio {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+}
+
+.mensaje-otro {
+    align-self: flex-start;
+    background-color: #e5e5e5;
+}
+
+.mensaje .fecha {
+    font-size: 10px;
+    color: #7f8c8d;
+    display: block;
+    text-align: right;
+    margin-top: 2px;
+}
+
+.seccion-entrada-chat {
+    position: relative;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+}
+
+.formulario-chat {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.formulario-chat textarea {
+    flex: 1;
+    resize: none;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.formulario-chat button[type="submit"] {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario-chat button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.boton-adjuntar {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* ==========================================
+   Pie Principal
+   ========================================== */
+.pie-principal {
+    text-align: center;
+    padding: 20px;
+    color: #7f8c8d;
+    font-size: 14px;
+    border-top: 1px solid #eee;
+    background-color: white;
+    margin-top: auto;
+}
